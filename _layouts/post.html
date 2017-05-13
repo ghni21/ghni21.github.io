@@ -18,6 +18,8 @@ layout: default
     {{ content }}
 
   </section>
+  {% include new-old.html %}
+  {% include comments.html %}
   <!-- 网易云跟帖 -->
 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
@@ -30,9 +32,7 @@ var cloudTieConfig = {
 };
 var yunManualLoad = true;
 Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-  // 云跟帖结束
 </script>
+<!-- 云跟帖结束 -->
 </article>
 
-{% include new-old.html %}
-{% include comments.html %}
